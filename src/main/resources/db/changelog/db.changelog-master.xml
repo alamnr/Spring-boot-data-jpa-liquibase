@@ -6,6 +6,16 @@
         xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
-
+		<changeSet id="1" author="alam">
+			<createTable tableName="BOOK">
+				<column name="bookId" type="long"></column>
+				<column name="title" type="varchar"></column>
+				<column name="publishDate" type="date"></column>
+				<column name="pageCount" type="int"></column>
+				<column name="price" type="decimal"></column>
+			
+			</createTable>
+		
+		</changeSet>
 		<include file="db/changelog/db.changelog-0.0.1.xml"/>
 </databaseChangeLog>
