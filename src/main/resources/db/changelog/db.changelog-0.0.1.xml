@@ -11,3 +11,6 @@
 			<dropTable tableName="BOOK"/>
 		</changeSet>
 </databaseChangeLog>
+
+  <!-- command -1: mvn clean install
+  command -1: mvn liquibase:update -->
