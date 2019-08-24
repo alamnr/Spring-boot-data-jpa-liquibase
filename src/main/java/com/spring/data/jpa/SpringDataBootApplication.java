@@ -41,6 +41,9 @@ public class SpringDataBootApplication {
 			book.setPrice(new BigDecimal(10));
 			
 			repository.save(book);	
+			
+			
+			repository.findAll().stream().forEach(obj->System.out.println(obj));
 		};
 	}
 

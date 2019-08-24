@@ -23,6 +23,10 @@ public class Book {
 	
 	
 	
+	public Book() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public Book(String title) {
 		super();
 		this.title = title;

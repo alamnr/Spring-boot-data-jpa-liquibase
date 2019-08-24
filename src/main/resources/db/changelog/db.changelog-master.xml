@@ -8,10 +8,12 @@
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 		<changeSet id="1" author="alam">
 			<createTable tableName="BOOK">
-				<column name="bookId" type="long"></column>
+				<column name="book_id" type="long"  autoIncrement="true">
+					 <constraints primaryKey="true" nullable="false"/>
+				</column>
 				<column name="title" type="varchar"></column>
-				<column name="publishDate" type="date"></column>
-				<column name="pageCount" type="int"></column>
+				<column name="publish_date" type="date"></column>
+				<column name="page_count" type="int"></column>
 				<column name="price" type="decimal"></column>
 			
 			</createTable>
