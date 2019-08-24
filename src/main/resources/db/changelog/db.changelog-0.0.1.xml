@@ -7,8 +7,9 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-		<changeSet id="2" author="alam">
+		<changeSet id="db.changelog-0.0.1" author="alam">
 			<!-- <dropTable tableName="BOOK"/> -->
+			<addPrimaryKey tableName="BOOK" columnNames="book_id" constraintName="pk_book"/>
 		</changeSet>
 </databaseChangeLog>
 
